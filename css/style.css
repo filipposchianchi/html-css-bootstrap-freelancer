@@ -1,0 +1,59 @@
+/* REGOLE GENERALI DI PAGINA */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* REGOLE HEADER */
+.row {
+  height: 80px;
+  background: #2c3e50;
+}
+
+header .row span {
+  color: white;
+  font-size: 20px;
+  margin-top: 35px;
+  display: inline-block;
+  margin-top: 23px;
+}
+
+header .col-xs-4 {
+  text-align: right;
+}
+
+.menu {
+  color: white;
+  background-color: green;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 19px;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .hidden {
+    display: inline-block;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: 8%
+  }
+  .hidden a {
+    text-decoration: none;
+    color: white;
+  } 
+
+}
