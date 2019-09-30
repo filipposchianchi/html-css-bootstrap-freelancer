@@ -7,7 +7,7 @@
 }
 
 /* REGOLE HEADER */
-.row {
+header .row {
   height: 80px;
   background: #2c3e50;
 }
@@ -15,7 +15,6 @@
 header .row span {
   color: white;
   font-size: 20px;
-  margin-top: 35px;
   display: inline-block;
   margin-top: 23px;
 }
@@ -33,27 +32,63 @@ header .col-xs-4 {
   display: inline-block;
   margin-top: 19px;
 }
-.hidden {
+.nascondi {
   display: none;
 }
 
+/* REGOLE SECONDO CONTAINER */
+#start_bootstrap .row {
+  background: #1abc9c;
+}
+
+#start_bootstrap .container_img {
+  max-width: 300px;
+  margin: 50px auto;
+}
+#start_bootstrap h1, #start_bootstrap h4 {
+  text-align: center;
+  color: white;
+}
+#start_bootstrap h4 {
+  margin-bottom: 50px;
+}
+
+/* REGOLE BLOCCO PORTFOLIO */
+#portfolio h2 {
+  font-size: 40px
+  color: #2c3e50;
+  margin-top: 55px;
+  text-align: center;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+
+
 @media screen and (min-width: 1200px) {
+  .row span {
+    margin-left: 10%
+  }
   .menu {
     display: none;
   }
-  .hidden {
+  .nascondi {
     display: inline-block;
+    margin-top: 27px;
+    margin-right: 10%;
+
   }
   ul {
     list-style-type: none;
   }
   li {
     display: inline-block;
-    margin-right: 8%
   }
-  .hidden a {
+  .nascondi a {
     text-decoration: none;
     color: white;
-  } 
-
+    margin-left: 40px
+  }
 }
