@@ -1,4 +1,4 @@
-/* REGOLE GENERALI DI PAGINA */
+/* REGOLE GENERALI */
 *{
   margin: 0;
   padding: 0;
@@ -6,89 +6,125 @@
   box-sizing: border-box;
 }
 
-/* REGOLE HEADER */
-header .row {
-  height: 80px;
+.my_navbar {
+  width: 100%;
   background: #2c3e50;
-}
+  position: fixed;
+  z-index: 999;
 
-header .row span {
+}
+.my_navbar span {
   color: white;
-  font-size: 20px;
   display: inline-block;
-  margin-top: 23px;
-}
-
-header .col-xs-4 {
-  text-align: right;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .menu {
+  background: green;
   color: white;
-  background-color: green;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 20px;
   display: inline-block;
-  margin-top: 19px;
+  padding: 4px 8px;
+  font-size: 20px;
+  margin-top: 16px;
+  border-radius: 4px;
 }
-.nascondi {
+.nascondi{
   display: none;
 }
 
-/* REGOLE SECONDO CONTAINER */
-#start_bootstrap .row {
+.start_bootstrap {
   background: #1abc9c;
+  margin-top: 67px;
+  margin-bottom: 50px;
+}
+.container_img {
+  width: 30%;
+  margin: 50px auto;
+  margin-bottom: 0;
 }
 
-#start_bootstrap .container_img {
-  max-width: 300px;
-  margin: 50px auto;
+.start_bootstrap h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }
-#start_bootstrap h1, #start_bootstrap h4 {
+.start_bootstrap h4 {
   text-align: center;
   color: white;
-}
-#start_bootstrap h4 {
   margin-bottom: 50px;
 }
 
-/* REGOLE BLOCCO PORTFOLIO */
-#portfolio h2 {
-  font-size: 40px
+
+h2 {
+  font-size: 50px;
+  text-align: center;
   color: #2c3e50;
-  margin-top: 55px;
+}
+
+.portfolio {
+  width: 80%;
+  margin: 0 auto;
+}
+.container_img1, .container_img2, .container_img3, .container_img4, .container_img5, .container_img6 {
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+.portfolio img {
+  height: 233px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.about {
+background: #1abc9c;
+}
+.about h2 {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.about .container-fluid {
+  width: 70%;
+  color: white;
+  font-size: 20px;
+}
+.about a {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 6px 10px;
+  background: #1abc9c;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.button {
   text-align: center;
 }
 
-#portfolio img {
-  width: 100%;
-}
-
-
-
 @media screen and (min-width: 1200px) {
-  .row span {
-    margin-left: 10%
+  .nascondi {
+  display: inline-block;
   }
   .menu {
     display: none;
   }
-  .nascondi {
+  .my_navbar ul {
+    list-style: none;
+    margin-top: 22px;
+    text-align: right;
+  }
+  .my_navbar li {
     display: inline-block;
-    margin-top: 27px;
-    margin-right: 10%;
-
+    margin-right: 150px;
   }
-  ul {
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-  }
-  .nascondi a {
+  .my_navbar a {
     text-decoration: none;
     color: white;
-    margin-left: 40px
   }
+
 }
